@@ -45,8 +45,8 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 1. **Clona el repositorio**:
 
    ```bash
-   git clone https://github.com/pzric/CashCard.git
-   cd CashCard
+   git clone https://github.com/pzric/CashCard-v1.git
+   cd CashCard-v1
    
 1. **Compila y ejecuta el proyecto:**:
 
