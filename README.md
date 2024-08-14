@@ -1,57 +1,61 @@
-# Family Cash Card Application
+# Cash Card Application v1 - Spring Boot REST API
 
 ## Descripción
 
-La aplicación Family Cash Card es una solución moderna para que los padres administren las asignaciones de sus hijos. En lugar de manejar dinero en efectivo, los padres pueden utilizar esta aplicación para enviar, recibir y rastrear fondos mediante tarjetas de efectivo virtuales, similares a las tarjetas de regalo.
+Este proyecto es una implementación de una API REST completa utilizando Spring Boot.
+Durante el desarrollo de este proyecto, se exploran conceptos clave como la seguridad con Spring Security, persistencia de datos con Spring Data JDBC, y desarrollo de aplicaciones modernas con un enfoque en pruebas.
 
-## Objetivos del Proyecto
-
-Este proyecto tiene los siguientes objetivos principales:
-
-- **Construir una API RESTful completa**: Utilizando Spring Boot, crear una API que permita realizar operaciones CRUD sobre las tarjetas de efectivo.
-- **Aplicar buenas prácticas de desarrollo**: Implementar validaciones de reglas de negocio, autenticación y autorización, y asegurar la API contra accesos no autorizados y exploits.
-- **Fomentar una arquitectura bien estructurada**: Utilizar una arquitectura en capas para separar las responsabilidades y facilitar el mantenimiento del código.
-- **Adoptar un enfoque de desarrollo basado en pruebas**: Escribir pruebas antes de la implementación para asegurar que la aplicación funcione según lo diseñado.
-
-## Funcionalidades
-
-La aplicación Family Cash Card permite realizar las siguientes operaciones:
-
-- Crear una nueva tarjeta de efectivo
-- Obtener todas las tarjetas de efectivo
-- Obtener una tarjeta de efectivo específica
-- Actualizar una tarjeta de efectivo
-- Eliminar una tarjeta de efectivo
-
+## Uso
+La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las tarjetas de débito digital. Algunas de las características principales incluyen:
+- **Paginación y Filtrado:** Soporte para la recuperación de listas de tarjetas con capacidades de paginación y filtrado.
+- **Manejo de Errores:** Asegurando que no se revelen datos sensibles.
 ## Tecnologías Utilizadas
 
-- **Spring Boot**: Framework principal para la construcción de la API.
-- **Spring Web**: Para manejar las comunicaciones HTTP.
-- **Spring Security**: Para implementar autenticación y autorización.
+- **Spring Boot**: Framework para crear aplicaciones Java de manera rápida y sencilla.
+- **Spring Security:** Framework que provee seguridad a nivel de autenticación y autorización.
+- **Spring Data JDBC:** Facilita la conversión automática entre objetos Java y la base de datos
 - **H2 Database**: Base de datos en memoria utilizada para el almacenamiento persistente de datos durante el desarrollo.
+- **Spring Web**: Para manejar las comunicaciones HTTP.
+- **Gradle:** Herramienta de construcción que maneja dependencias y automatizan tareas
 
 ## Prerrequisitos
-
 Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
-
 - Java 17+
 - Gradle 7+
 - Un IDE como IntelliJ IDEA o Eclipse
 
+## Pruebas
+El proyecto incluye una suite de pruebas automatizadas que cubren tanto la funcionalidad principal de la API como los aspectos de seguridad.
+### Tipos de pruebas implementadas:
+- Pruebas de Integración: Verifican la correcta integración de los componentes de la aplicación, incluyendo controladores, servicios y repositorios.
+- Pruebas de Seguridad: Aseguran que solo los usuarios autenticados y autorizados puedan acceder a los recursos protegidos.
+- Pruebas de Persistencia: Validan que los datos se almacenen y recuperen correctamente utilizando Spring Data JDBC.
+
 ## Instalación
 
-Sigue estos pasos para configurar y ejecutar el proyecto:
+Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
 
 1. **Clona el repositorio**:
-
    ```bash
    git clone https://github.com/pzric/CashCard-v1.git
-   cd CashCard-v1
    
-1. **Compila y ejecuta el proyecto:**:
-
+2. **Navegar al directorio del proyecto**:
    ```bash
-   ./gradlew bootRun
+      cd CashCard-v1
+
+3. **Navegar al directorio del proyecto**:
+   ```bash
+      ./gradlew build
+
+4. **Ejecutar la aplicación**:
+   ```bash
+      ./gradlew bootRun
+   
+## Ejecución de las pruebas:
+Para ejecutar las pruebas, utiliza el siguiente comando:
+   ```console
+   ./gradlew test
+   ```
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT.
@@ -61,4 +65,7 @@ Este proyecto está licenciado bajo la Licencia MIT.
 * **Ricardo Zamora Picazo** - [Ricardo ZP](https://github.com/pzric)
 * **Spring Academy** - [Spring Academy](https://spring.academy/)
 
+
+## Reconocimientos   
+Agradecimientos a la comunidad de Spring y a los recursos educativos que ayudaron a hacer posible este proyecto.
 
